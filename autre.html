@@ -253,7 +253,7 @@
 </body>
 <script>
     var i;
-    var mybutton = document.getElementById("up-button");
+    var mybutton = document.querySelector(".up-button");
     const navbar = document.querySelector(".navbar");
     const navlink = document.querySelector(".nav-link");
     window.onscroll = () => {
@@ -262,6 +262,13 @@
         this.scrollY > 10 ? document.getElementById("logo").src = 'images/OrionLogoF.png' : document.getElementById("logo").src = 'images/OrionLogoFA.png';
         this.scrollY > 10 ? navlink.classList.add("sticky") : navlink.classList.remove("sticky");
     }
+    $(document).ready(function () {
+
+        $('.nav-button').on('click', function () {
+
+            $('.animated-icon').toggleClass('open');
+        });
+    });
 </script>
 
 </html>
