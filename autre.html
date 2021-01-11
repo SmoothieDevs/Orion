@@ -235,9 +235,9 @@
     const navbar = document.querySelector(".navbar");
     const navlink = document.querySelector(".nav-link");
     window.onscroll = () => {
-        this.scrollY > 20 ? mybutton.style.display = "block" : mybutton.style.display = "none";
+        this.scrollY > 10 ? mybutton.style.display = "block" : mybutton.style.display = "none";
         this.scrollY > 10 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-        this.scrollY > 10 ? document.getElementById("logo").src = 'images/Logo1.png' : document.getElementById("logo").src = 'images/Logo11.png';
+        this.scrollY > 10 ? document.getElementById("logo").src = 'images/OrionLogoF.png' : document.getElementById("logo").src = 'images/OrionLogoFA.png';
         this.scrollY > 10 ? navlink.classList.add("sticky") : navlink.classList.remove("sticky");
     }
 </script>
