@@ -12,9 +12,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.parallax-window {
+header + section.parallax-window {
     background: transparent;
     min-height: 100vh;
+}
+
+#section3{
+    background: url(images/Visio.png) no-repeat center fixed;
+    min-height: 500px;
 }
 
 .navbar {
@@ -31,16 +36,6 @@ body {
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-.h1-logo {
-    font-family: 'ubuntu', sans-serif;
-    margin-left: 5px;
-    font-size: 35px;
-    color: white;
-    font-weight: 400;
-    text-decoration: none;
-    outline: none;
-}
-
 .navbar-toggler:focus{
     border: 0;
     box-shadow: 0 0 0 0;
@@ -48,10 +43,6 @@ body {
 .navbar-toggler{
     border: 0;
     box-shadow: 0 0 0 0;
-}
-
-.h1-logo.sticky {
-    color: #68BF3F;
 }
 
 .spacer {
@@ -128,7 +119,27 @@ a:hover>.fa-angle-down {
 }
 
 /*Lien du nav quand header-> fixed*/
-
+div.collapse.navbar-collapse.show>.navbar-nav>li{
+    margin: 10px 0;
+}
+div.collapse.navbar-collapse.show>.navbar-nav>li>a{
+    color: #68BF3F !important;
+    border: 2px solid rgba(0, 0, 0, 0.0);
+}
+div.collapse.navbar-collapse.show>.navbar-nav>li>a:hover{
+    color: #68BF3F !important;
+    border: 2px solid #68BF3F;
+}
+div.collapse.navbar-collapse.show>.navbar-nav>li>a[class*=active]{
+    border: 2px solid #68BF3F;
+    border-radius: 8px;
+}
+.animated-icon span.sticky{
+    background: #68BF3F;
+}
+.white{
+    background: #fff;
+}
 .navbar-nav>li>a {
     color: #fff !important;
     /*Forcer la couleur blanche*/
@@ -146,14 +157,14 @@ a:hover>.fa-angle-down {
 
 /* Bouton Active*/
 
-.navbar-nav>li>a[class*=active] {
+.navbar-nav>li>a[class*=active]{
     border: 2px solid #fff;
     border-radius: 8px;
     color: #fff !important;
     transition: all 0.3s ease;
 }
 
-.navbar-nav>li>a[class*=active]:hover {
+.navbar-nav>li>a[class*=active]:hover{
     background-color: #fff;
     color: #68BF3F !important;
 }
@@ -162,25 +173,23 @@ a:hover>.fa-angle-down {
 
 /*Lien du nav quand header-> sticky*/
 
-.navbar.sticky>.container-fluid>.collapse>.navbar-nav>li>a {
+.navbar.sticky>.container-fluid>.collapse>.navbar-nav>li>a{
     color: #373F41 !important;
     transition: all 0.3s ease;
-    /*Forcer la couleur noir*/
 }
 
-.navbar.sticky>.container-fluid>.collapse>.navbar-nav>li>a:hover {
-    color: #009CC2 !important;
-    /*Forcer la couleur noir*/
+.navbar.sticky>.container-fluid>.collapse>.navbar-nav>li>a:hover{
+    color: #68BF3F !important;
 }
 
-.navbar.sticky>.container-fluid>.collapse>.navbar-nav>li>a[class*=active] {
-    border: 2px solid #009CC2;
+.navbar.sticky>.container-fluid>.collapse>.navbar-nav>li>a[class*=active]{
+    border: 2px solid #68BF3F;
     border-radius: 8px;
-    color: #009CC2 !important;
+    color: #68BF3F !important;
 }
 
-.navbar.sticky>.container-fluid>.collapse>.navbar-nav>li>a[class*=active]:hover {
-    background-color: #009CC2;
+.navbar.sticky>.container-fluid>.collapse>.navbar-nav>li>a[class*=active]:hover{
+    background-color: #68BF3F;
     color: #fff !important;
 }
 
@@ -224,6 +233,7 @@ a:hover>.fa-angle-down {
     background: #68BF3F;
     border: 1px solid #68BF3F;
     color: white;
+    box-shadow: 8px 4px 8px rgba(90, 90, 90, .4);
 }
 #section2 .card.alt {
     background: #009CC2;
@@ -253,7 +263,6 @@ a:hover>.fa-angle-down {
 #section2 .card:hover {
     transform: scale(1.03);
     /*background: linear-gradient(0.45turn ,#009cc2, #68BF3F);*/
-    box-shadow: 0 4px 12px rgba(90, 90, 90, .08);
     background: #009CC2;
     border-color: #009CC2;
 }
@@ -261,6 +270,7 @@ a:hover>.fa-angle-down {
 #section2 h3 {
     font-weight: normal;
     font-size: 30px;
+    min-height: 0 !important;
 }
 
 .up-button {
@@ -288,13 +298,10 @@ a:hover>.fa-angle-down {
     transform: scale(1.1);
 }
 
-#section3 {
-    background: linear-gradient(0.25turn, #68BF3F, #009cc2);
-}
 
 #section3 div.d-flex>div {
     background: #fff;
-    border-radius: 20px;
+    border-radius: 5px;
 }
 
 /*Icon animation*/
@@ -337,6 +344,14 @@ a:hover>.fa-angle-down {
     background: #fff;
 }
 
+.no-transition {
+    -webkit-transition: height 0.01s;
+    -moz-transition: height 0.01s;
+    -ms-transition: height 0.01s;
+    -o-transition: height 0.01s;
+    transition: height 0.01s;
+  }
+
 .animated-icon span:nth-child(1) {
     top: 0px;
     -webkit-transform-origin: left center;
@@ -368,11 +383,13 @@ a:hover>.fa-angle-down {
     transform: rotate(45deg);
     top: 0px;
     left: 8px;
+    background: #68BF3F;
 }
 
 .animated-icon.open span:nth-child(2) {
     width: 0%;
     opacity: 0;
+    background: #68BF3F;
 }
 
 .animated-icon.open span:nth-child(3) {
@@ -382,12 +399,11 @@ a:hover>.fa-angle-down {
     transform: rotate(-45deg);
     top: 21px;
     left: 8px;
+    background: #68BF3F;
 }
 
 footer{
     background-color: #024873;
-    color: white;
-    padding-top: 40px;
 }
 
 footer hr{
@@ -396,20 +412,8 @@ footer hr{
     background-color: #fff;
     border: none;
 }
-
-footer h6 {
-    margin: 30px;
-    font-size: 18px;
-}
-
-footer li {
-    font-size: 16px;
-    margin: 10px;
-    
-}
-
 footer a{
-    color: white;
+    color: #fff;
     transition: all .3s ease ;
 }
 
@@ -417,7 +421,18 @@ footer a:hover{
     color: #68BF3F;
 }
 
-#section3 p{
-    font-size: 18px;
-}
+#section3 a{
+    background: #68BF3F;
+    border: solid 2px #68BF3F;
 
+}
+#section3 a:hover{
+    background: #FFF;
+    color: #68BF3F;
+}
+#section3 h4 {
+    color: #373F41;
+}
+#section3 p {
+    color: #737B7D;
+}
