@@ -11,10 +11,12 @@ Fonts colors : #373F41, #737B7D
 body {
     font-family: 'Poppins', sans-serif;
 }
-
-header + section.parallax-window {
+.fullscreen{ /*Faire en sorte que la banner de l'index fass tout l'écran*/
+    height: 100vh; 
+}
+.parallax-window {/*Setup pour le parallax*/
+    min-height: 400px;
     background: transparent;
-    min-height: 100vh;
 }
 
 #section3{
@@ -421,18 +423,22 @@ footer a:hover{
     color: #68BF3F;
 }
 
-#section3 a{
+a.btn{
     background: #68BF3F;
     border: solid 2px #68BF3F;
 
 }
-#section3 a:hover{
+a.btn:hover{
     background: #FFF;
     color: #68BF3F;
+    border: solid 2px #68BF3F;
 }
 #section3 h4 {
     color: #373F41;
 }
 #section3 p {
     color: #737B7D;
+}
+#team i{
+    color: #737B7D;;
 }
