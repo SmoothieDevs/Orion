@@ -1,274 +1,372 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <!-- Bootstrap JS -->
+        <!-- Bootstrap JS -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
-    integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
-    crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
-    integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
-    crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+            integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+            crossorigin="anonymous"></script>
 
-    <!-- Font Awesome JS -->
+        <!-- Font Awesome JS -->
 
-    <script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
 
-    <!-- Scroll Parallax JS -->
+        <!-- Scroll Parallax JS -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="parallax.js-1.5.0/parallax.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="parallax.js-1.5.0/parallax.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 
-    <title>PPP</title>
+        <title>Orion | Autre</title>
 
-</head>
-<style type="text/css">
-    row {
-       --bs-gutter-x: 1.5rem;
-    }
-    .form-control {
-         background-color: white;
-         border:none;
-         border-bottom: solid;
-         margin-top: 50px;
-    }
+    </head>
+    <body>
 
-    form {
-        width: 50%;
-        background-color: white;
-        padding: 50px;
-        border-radius: 30px;
-        margin-top: 80px;
-    }
-    form>button {
-        margin-left: 125px;
-        margin-top: 20px;
-    }
-        @media all and (max-width: 576px) {
-    	form {
-    		width: unset;
-    	}
-    }
-</style>
-<body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="offset-lg-1" href="#">
-                    <img id="logo" src="images/OrionLogoFA.png" title="Logo Médical Informatique" alt="LOGO" width="150px" height="40px">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-lg-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Page</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">A propos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
-<main>
-    <section class="parallax-window banniere" data-parallax="scroll" data-speed="0.4" style="background: linear-gradient(0.25turn, #68BF3F, #009cc2);">
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-10 mx-auto text-center">
-                    <h1 style="margin-top: 220px;" class="banner-h2">Qui somme nous</h1>
-                    <a id="chevron-down" href="#section1">
-                        <i class="fa fa-angle-down"></i>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="offset-lg-1 d-inline-flex" href="#">
+                        <img id="logo" src="images/OrionLogoFA.png" title="Logo Orion" alt="LOGO" width="130px"
+                            height="35px">
                     </a>
+                    <button class="navbar-toggler nav-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon"><span class="animated-bar"></span><span
+                                class="animated-bar"></span><span class="animated-bar"></span></div>
+                    </button>
+                    <div class="collapse navbar-collapse no-transition" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page 1</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page 2</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="outils.html">Outils</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">A propos</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <!-- row -->
-        </div>
-    </section>
-    <section class="parallax-window" data-parallax="scroll" data-speed="0.4">
-        <div class="row">
-            <div class="col-md-5 offset-md-2">
-                <h2 class="banner-h2" style="color: black;">Etudiants en IUT</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida nec nunc eu finibus. Nunc non tellus lectus. Vivamus a ligula fringilla, ullamcorper purus sed, feugiat urna. Aliquam nibh nisl, maximus eu ante at, varius efficitur dolor. Maecenas vehicula a tellus ut cursus. Curabitur fermentum purus at pulvinar accumsan. Praesent congue scelerisque magna, id consectetur massa dignissim sit amet. Praesent vulputate commodo ullamcorper.
-                Vestibulum tincidunt mi ullamcorper, consequat libero eget, dapibus turpis. Quisque ut lorem id turpis accumsan viverra at ac magna. Morbi mi est, viverra non arcu in, venenatis pharetra est. Sed vel rhoncus nisl, ac varius dui. Morbi sodales odio sed nunc efficitur accumsan at id ante. Nulla quis neque vel odio pellentesque cursus non vitae quam. Pellentesque posuere lectus in erat hendrerit cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ornare feugiat ligula at volutpat. Aliquam euismod rhoncus purus condimentum congue. Cras eu sagittis lorem, nec gravida dolor. In ullamcorper massa ex, at lobortis est varius eget. Integer accumsan faucibus leo a efficitur. In molestie in arcu ut vulputate. Pellentesque iaculis purus ac nunc consectetur porta.</p>
-            </div>
-            <div class="col-md-4">
-                <img style="float: right; margin-top: 100px" width="400" src="images/bg3.png">
-            </div>
-        </div>
-        <div class="row">
-            <div class="offset-md-2 col-md-9">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida nec nunc eu finibus. Nunc non tellus lectus. Vivamus a ligula fringilla, ullamcorper purus sed, feugiat urna. Aliquam nibh nisl, maximus eu ante at, varius efficitur dolor. Maecenas vehicula a tellus ut cursus. Curabitur fermentum purus at pulvinar accumsan. Praesent congue scelerisque</p>
-            </div>
-        </div>
-    </section>
-    <section class="parallax-window bannieres" data-parallax="scroll" data-speed="0.4" style="background: rgb(2,0,36); background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,215,255,1) 0%, rgba(57,121,9,1) 100%);padding:50px 0 50px;">
-        <h2 class="banner-h2" style="text-align: center">Notre équipe</h2>
-        <div class="row">
-            <div class="card offset-md-1 col-md-2" style="width: 15rem">
-                <img class="card-img-top" src="images/photo.png" alt="Card image cap" >
-                <div class="card-body">
-                    <h4>William Stephan</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </nav>
+        </header>
+        <main>
+            <section class="parallax-window banniere" data-parallax="scroll" data-speed="0.4" data-image-src="images/team.png">
+                <div class="container ">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto text-center">
+                            <h1 class="banner-h1">A propros</h1>
+                            <div class="spacer"></div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="card offset-md-1 col-md-2" style="width: 15rem;">
-              <img class="card-img-top" src="images/photo.png" alt="Card image cap">
-              <div class="card-body">
-                <h4>Malo Le Roux</h4>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-        </div>
-        <div class="card offset-md-1 col-md-2" style="width: 15rem;">
-          <img class="card-img-top" src="images/photo.png" alt="Card image cap">
-          <div class="card-body">
-            <h4>Savinien Barbotaud</h4>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
-    <div class="card offset-md-1 col-md-1" style="width: 15rem;">
-      <img class="card-img-top" src="images/photo.png" alt="Card image cap">
-      <div class="card-body">
-        <h4>Gillian Le Pevedic</h4>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    </div>
-</div>
-</div>
-</div>
-</section>
-<section>
-    <h2 class="banner-h2" style="text-align: center; color: black;">Nos Sources</h2>
-    <div class="row">
-        <div class="col-md-10 offset-md-1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida nec nunc eu finibus. Nunc non tellus lectus. Vivamus a ligula fringilla, ullamcorper purus sed, feugiat urna. Aliquam nibh nisl, maximus eu ante at, varius efficitur dolor. Maecenas vehicula a tellus ut cursus. Curabitur fermentum purus at pulvinar accumsan. Praesent congue scelerisque magna, id consectetur massa dignissim sit amet. Praesent vulputate commodo ullamcorper.
+            </section>
 
-            Vestibulum tincidunt mi ullamcorper, consequat libero eget, dapibus turpis. Quisque ut lorem id turpis accumsan viverra at ac magna. Morbi mi est, viverra non arcu in, venenatis pharetra est. Sed vel rhoncus nisl, ac varius dui. Morbi sodales odio sed nunc efficitur accumsan at id ante. Nulla quis neque vel odio pellentesque cursus non vitae quam. Pellentesque posuere lectus in erat hendrerit cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ornare feugiat ligula at volutpat. Aliquam euismod rhoncus purus condimentum congue. Cras eu sagittis lorem, nec gravida dolor. In ullamcorper massa ex, at lobortis est varius eget. Integer accumsan faucibus leo a efficitur. In molestie in arcu ut vulputate. Pellentesque iaculis purus ac nunc consectetur porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida nec nunc eu finibus. Nunc non tellus lectus. Vivamus a ligula fringilla, ullamcorper purus sed, feugiat urna. Aliquam nibh nisl, maximus eu ante at, varius efficitur dolor. Maecenas vehicula a tellus ut cursus. Curabitur fermentum purus at pulvinar accumsan. Praesent congue scelerisque magna, id consectetur massa dignissim sit amet. Praesent vulputate commodo ullamcorper.
+            <section id="section1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1 text-center">
+                            <h1 class="display-6">A propos de nous et de notre site</h1>
+                            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
+                                sapien non lectus euismod, sed interdum ligula iaculis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-            Vestibulum tincidunt mi ullamcorper, consequat libero eget, dapibus turpis. Quisque ut lorem id turpis accumsan viverra at ac magna. Morbi mi est, viverra non arcu in, venenatis pharetra est. Sed vel rhoncus nisl, ac varius dui. Morbi sodales odio sed nunc efficitur accumsan at id ante. Nulla quis neque vel odio pellentesque cursus non vitae quam. Pellentesque posuere lectus in erat hendrerit cursus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras ornare feugiat ligula at volutpat. Aliquam euismod rhoncus purus condimentum congue. Cras eu sagittis lorem, nec gravida dolor. In ullamcorper massa ex, at lobortis est varius eget. Integer accumsan faucibus leo a efficitur. In molestie in arcu ut vulputate. Pellentesque iaculis purus ac nunc consectetur porta.</p>
-        </div>
-    </div>
-</section>
-<section class="parallax-window bannieres" data-parallax="scroll" data-speed="0.4" style="background: linear-gradient(0.25turn, #68BF3F, #009cc2);">
-    <div class="row">
-        <div class="col-md-8 offset-md-4">
-            <form>
-            <h3 style="text-align: center;">Saisir votre message</h3>
-              <div class="form-group">
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Nom...">
-              </div>
-              <div class="form-group">
-                <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email...">
-              </div>
-              <div class="form-group">
-                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Message...">
-              </div>
-              <button type="button" class="btn btn-primary btn-lg">Valider</button>
-            </form>
-        </div>
-    </div>
-</section>
-</main>
-    <!-- Footer -->
-    <footer>
-        <div class="container-fluid text-center text-md-left">
-            <div class="row">
-                <h5 class="text-uppercase text-center font-weight-bold">Footer Heading</h5>
-                <div class="col-md-6 mt-md-0 mt-3">
-                    <h6 class="text-uppercase">Notre groupe</h6>
-                    <ul class="list-unstyled">
-                        <li>
-                          <p>William STEPHAN</p>
-                        </li>
-                        <li>
-                            <p>Malo LE ROUX</p>
-                        </li>
-                        <li>
-                            <p>Gillian LE PEVEDIC</p>
-                        </li>
-                        <li>
-                            <p>Savinien BARBOTAUD</p>
-                        </li>
-                      </ul>
+            <section class="px-5 mx-5 text-md-left">
+                <div class="container my-5 py-5">
+                    <div class="row">
+                        <div class="col-8 mb-4 mb-0">
+
+                            <h3 class="display-6 mb-4">Etudiants en IUT</h3>
+
+                            <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                                gravida nec nunc eu
+                                finibus. Nunc non tellus lectus. Vivamus a ligula fringilla, ullamcorper purus sed,
+                                feugiat
+                                urna. Aliquam nibh nisl, maximus eu ante at, varius efficitur dolor. Maecenas vehicula a
+                                tellus ut cursus. Curabitur fermentum purus at pulvinar accumsan. Praesent congue
+                                scelerisque magna, id consectetur massa dignissim sit amet. Praesent vulputate commodo
+                                ullamcorper.
+                                Vestibulum tincidunt mi ullamcorper, consequat libero eget, dapibus turpis. Quisque ut
+                                lorem
+                                id turpis accumsan viverra at ac magna. Morbi mi est, viverra non arcu in, venenatis
+                                pharetra est. Sed vel rhoncus nisl, ac varius dui. Morbi sodales odio sed nunc efficitur
+                                accumsan at id ante. Nulla quis neque vel odio pellentesque cursus non vitae quam.
+                                Pellentesque posuere lectus in erat hendrerit cursus. Orci varius natoque penatibus et
+                                magnis dis parturient montes, nascetur ridiculus mus. Cras ornare feugiat ligula at
+                                volutpat.</p>
+
+                                <a class="btn btn-primary py-3 px-4 mt-3" target="_blank" href="https://iut-lannion.univ-rennes1.fr/">Découvrir notre IUT</a>
+
+                        </div>
+                        <div class="col-md-4 my-5">
+                                <img src="images/iut-lannion.jpg" class="img-fluid" title="IUT Lannion" alt="IUT Lannion">
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="col-md-6 mb-md-0 mb-3">
-                    <h6 class="text-uppercase">Liens utiles</h6>
-                    <ul class="list-unstyled">
-                        <li>
-                          <a href="#!">Facebook</a>
-                        </li>
-                        <li>
-                          <a href="#!">Twitter</a>
-                        </li>
-                        <li>
-                          <a href="#!">Instagram</a>
-                        </li>
-                      </ul>
+            </section>
+            
+            <section id="team" class="parallax-window pb-5" data-parallax="scroll" data-speed="0.4" overScrollFix="true"
+                data-image-src="images/team.png">
+                <div class="container">
+                    <div class="row">
+                        <h3 class="display-3 text-center text-white my-5 pb-2">Notre équipe</h3>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="p-4 bg-white rounded">
+                                <div class="avatar w-75 mx-auto white d-flex justify-content-center align-items-center">
+                                    <img src="images/will.png" class="img-fluid rounded-circle z-depth-1" />
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h6 class="font-weight-bold pt-2">William Stephan</h6>
+                                    <p class="text-muted">
+                                    <p>Web Designer</p>
+                                    <small><i>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.</i></small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="p-4 bg-white rounded">
+                                <div class="avatar w-75 mx-auto white d-flex justify-content-center align-items-center">
+                                    <img src="images/will.png" class="img-fluid rounded-circle z-depth-1" />
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h6 class="font-weight-bold pt-2">Gillian Le Pevedic</h6>
+                                    <p class="text-muted">
+                                    <p>Chef de projet</p>
+                                    <small><i>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.</i></small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="p-4 bg-white rounded">
+                                <div class="avatar w-75 mx-auto white d-flex justify-content-center align-items-center">
+                                    <img src="images/will.png" class="img-fluid rounded-circle z-depth-1" />
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h6 class="font-weight-bold pt-2">Savinien Barbotaud</h6>
+                                    <p class="text-muted">
+                                    <p>Intégrateur</p>
+                                    <small><i>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.</i></small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                            <div class="p-4 bg-white rounded">
+                                <div class="avatar w-75 mx-auto white d-flex justify-content-center align-items-center">
+                                    <img src="images/will.png" class="img-fluid rounded-circle z-depth-1" />
+                                </div>
+                                <div class="text-center mt-3">
+                                    <h6 class="font-weight-bold pt-2">Malo Le Roux</h6>
+                                    <p class="text-muted">
+                                    <p>Développeur</p>
+                                    <small><i>Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit.</i></small>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+            </section>
+            <section class=" bg-white">
+                <div class="container">
+                    <h2 class="banner-h2" style="text-align: center; color: black;">Nos Sources</h2>
+                    <div class="row">
+                        <div class="col-md-10 offset-md-1">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum gravida nec nunc eu
+                                finibus. Nunc non tellus lectus. Vivamus a ligula fringilla, ullamcorper purus sed,
+                                feugiat
+                                urna. Aliquam nibh nisl, maximus eu ante at, varius efficitur dolor. Maecenas vehicula a
+                                tellus ut cursus. Curabitur fermentum purus at pulvinar accumsan. Praesent congue
+                                scelerisque magna, id consectetur massa dignissim sit amet. Praesent vulputate commodo
+                                ullamcorper.
+
+                                Vestibulum tincidunt mi ullamcorper, consequat libero eget, dapibus turpis. Quisque ut
+                                lorem
+                                id turpis accumsan viverra at ac magna. Morbi mi est, viverra non arcu in, venenatis
+                                pharetra est. Sed vel rhoncus nisl, ac varius dui. Morbi sodales odio sed nunc efficitur
+                                accumsan at id ante. Nulla quis neque vel odio pellentesque cursus non vitae quam.
+                                Pellentesque posuere lectus in erat hendrerit cursus. Orci varius natoque penatibus et
+                                magnis dis parturient montes, nascetur ridiculus mus. Cras ornare feugiat ligula at
+                                volutpat. Aliquam euismod rhoncus purus condimentum congue. Cras eu sagittis lorem, nec
+                                gravida dolor. In ullamcorper massa ex, at lobortis est varius eget. Integer accumsan
+                                faucibus leo a efficitur. In molestie in arcu ut vulputate. Pellentesque iaculis purus
+                                ac
+                                nunc consectetur porta.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vestibulum
+                                gravida nec nunc eu finibus. Nunc non tellus lectus. Vivamus a ligula fringilla,
+                                ullamcorper
+                                purus sed, feugiat urna. Aliquam nibh nisl, maximus eu ante at, varius efficitur dolor.
+                                Maecenas vehicula a tellus ut cursus. Curabitur fermentum purus at pulvinar accumsan.
+                                Praesent congue scelerisque magna, id consectetur massa dignissim sit amet. Praesent
+                                vulputate commodo ullamcorper.
+
+                                Vestibulum tincidunt mi ullamcorper, consequat libero eget, dapibus turpis. Quisque ut
+                                lorem
+                                id turpis accumsan viverra at ac magna. Morbi mi est, viverra non arcu in, venenatis
+                                pharetra est. Sed vel rhoncus nisl, ac varius dui. Morbi sodales odio sed nunc efficitur
+                                accumsan at id ante. Nulla quis neque vel odio pellentesque cursus non vitae quam.
+                                Pellentesque posuere lectus in erat hendrerit cursus. Orci varius natoque penatibus et
+                                magnis dis parturient montes, nascetur ridiculus mus. Cras ornare feugiat ligula at
+                                volutpat. Aliquam euismod rhoncus purus condimentum congue. Cras eu sagittis lorem, nec
+                                gravida dolor. In ullamcorper massa ex, at lobortis est varius eget. Integer accumsan
+                                faucibus leo a efficitur. In molestie in arcu ut vulputate. Pellentesque iaculis purus
+                                ac
+                                nunc consectetur porta.</p>
+                        </div>
+                    </div>
                 </div>
+            </section>
+            <section class="px-md-5 mx-md-5 text-center">
+
+                <div class="container">
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center">
+          
+                  <!--Grid column-->
+                  <div class="col-md-6">
+          
+                    <!-- Default form subscription -->
+                    <form class="text-center" action="#!">
+          
+                      <p class="h4 mb-4">Nous Contater</p>
+          
+                      <p>Nous vous répondrons dès que possible</p>
+          
+                      <!-- Name -->
+                      <input type="text"  class="form-control mb-4" placeholder="Nom">
+          
+                      <!-- Email -->
+                      <input type="email"  class="form-control mb-4" placeholder="E-mail">
+                      <textarea type="text" id="form8" class="md-textarea form-control" rows="4" placeholder="Votre message..."></textarea>
+          
+                      <!-- Sign in button -->
+                      <button class="btn btn-info btn-block" type="submit">Envoyer</button>
+          
+          
+                    </form>
+                    <!-- Default form subscription -->
+          
+                  </div>
+                  <!--Grid column-->
+          
+                </div>
+                <!--Grid row-->
+          
+                </div>
+              </section>
+              <!--Section: Content-->
+        </main>
+        <!-- Footer -->
+        <footer class="text-white">
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <h5 class="text-uppercase text-center font-weight-bold pt-5">Footer Heading</h5>
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h6 class="text-uppercase m-4">Notre groupe</h6>
+                        <ul class="list-unstyled">
+                            <li class="m-3">
+                                <p>William STEPHAN</p>
+                            </li>
+                            <li>
+                                <p>Malo LE ROUX</p>
+                            </li>
+                            <li class="m-3">
+                                <p>Gillian LE PEVEDIC</p>
+                            </li>
+                            <li class="m-3">
+                                <p>Savinien BARBOTAUD</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 mb-md-0 mb-3">
+                        <h6 class="text-uppercase">Liens utiles</h6>
+                        <ul class="list-unstyled">
+                            <li class="m-3">
+                                <a href="#!">Facebook</a>
+                            </li>
+                            <li class="m-3">
+                                <a href="#!">Twitter</a>
+                            </li>
+                            <li class="m-3">
+                                <a href="#!">Instagram</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
             </div>
-            <hr>
-        </div>
 
-        <div class="footer-copyright text-center py-4">© 2021 Copyright :
-            <a target="_blank" href="https://iut-lannion.univ-rennes1.fr/"> Groupe G-23 IUT Lannion</a>
-        </div>
-    </footer>
+            <div class="footer-copyright text-center py-4">© 2021 Copyright :
+                <a target="_blank" href="https://iut-lannion.univ-rennes1.fr/"> Groupe G-23 IUT Lannion</a>
+            </div>
+        </footer>
         <aside><a href="#" class="up-button"><i class="fas fa-chevron-up"></i></a></aside>
-</body>
-<script>
-    var i;
-    var mybutton = document.querySelector(".up-button");
-    const navbar = document.querySelector(".navbar");
-    const navlink = document.querySelector(".nav-link");
-    window.onscroll = () => {
-        this.scrollY > 10 ? mybutton.style.display = "block" : mybutton.style.display = "none";
-        this.scrollY > 10 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-        this.scrollY > 10 ? document.getElementById("logo").src = 'images/OrionLogoF.png' : document.getElementById("logo").src = 'images/OrionLogoFA.png';
-        this.scrollY > 10 ? navlink.classList.add("sticky") : navlink.classList.remove("sticky");
-    }
-    $(document).ready(function () {
+    </body>
+    <script>
+        var navbutton = document.querySelector(".nav-button");
+        var mybutton = document.querySelector(".up-button");
+        const navbar = document.querySelector(".navbar");
+        const navlink = document.querySelector(".nav-link");
+        const logo = document.getElementById("logo");
+        var bars = document.querySelectorAll(".animated-bar");
+        window.onscroll = () => {
+            this.scrollY > 10 ? mybutton.style.display = "block" : mybutton.style.display = "none";
+            this.scrollY > 10 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            this.scrollY > 10 ? logo.src = 'images/OrionLogoF.png' : logo.src = 'images/OrionLogoFA.png';
+            this.scrollY > 10 ? navlink.classList.add("sticky") : navlink.classList.remove("sticky");
+            bars.forEach((bars) => {
+                this.scrollY > 10 ? bars.classList.add("sticky") : bars.classList.remove("sticky");
+            });
+        }
+        $(document).ready(function () {
 
-        $('.nav-button').on('click', function () {
+            $('.nav-button').on('click', function () {
 
-            $('.animated-icon').toggleClass('open');
+                $('.animated-icon').toggleClass('open');
+                $('.navbar').toggleClass('white');
+            });
         });
-    });
-</script>
+    </script>
 
 </html>
