@@ -23,11 +23,6 @@ body {
     background: transparent;
 }
 
-#section3 {
-    background: url(images/Visio.png) no-repeat center fixed;
-    min-height: 500px;
-}
-
 .navbar {
     position: fixed;
     width: 100%;
