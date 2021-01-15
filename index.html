@@ -234,28 +234,32 @@
         <!-- Footer -->
         <aside><a href="#" class="up-button"><i class="fas fa-chevron-up"></i></a></aside>
     </body>
+    <!-- Java Script / Jquery-->
     <script>
+        //Def variables
         var navbutton = document.querySelector(".nav-button");
         var mybutton = document.querySelector(".up-button");
         const navbar = document.querySelector(".navbar");
         const navlink = document.querySelector(".nav-link");
         const logo = document.getElementById("logo");
-        var bars = document.querySelectorAll(".animated-bar");
+        var bars = document.querySelectorAll(".animated-bar");//Selection des 3 bars ( <span> ) du menu burgers sous forme de NodeList
+        //Quand on scroll de 10px
         window.onscroll = () => {
             this.scrollY > 10 ? mybutton.style.display = "block" : mybutton.style.display = "none";
             this.scrollY > 10 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
             this.scrollY > 10 ? logo.src = 'images/OrionLogoF.png' : logo.src = 'images/OrionLogoFA.png';
             this.scrollY > 10 ? navlink.classList.add("sticky") : navlink.classList.remove("sticky");
-            bars.forEach((bars) => {
+            bars.forEach((bars) => {//ajouter la class sticky pour mettre les bars du menu burgers vertes quand le nav est en sticky
                 this.scrollY > 10 ? bars.classList.add("sticky") : bars.classList.remove("sticky");
             });
         }
+        //jquery / toggle des class pour configurer le menu burger
         $(document).ready(function () {
 
             $('.nav-button').on('click', function () {
 
-                $('.animated-icon').toggleClass('open');
-                $('.navbar').toggleClass('white');
+                $('.animated-icon').toggleClass('open');//transformer les 3 bars en croix
+                $('.navbar').toggleClass('white');// Mettre un fond blanc même quand on a pas scroll de 10px
             });
         });
     </script>
