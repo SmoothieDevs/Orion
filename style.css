@@ -12,15 +12,34 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.fullscreen {
-    /*Faire en sorte que la banner de l'index fass tout l'écran*/
-    height: 100vh;
+section{/*Couleur principal des sections*/
+    color: #373F41;
 }
 
-.parallax-window {
-    /*Setup pour le parallax*/
+.sec-color{/*Couleur secondaires des sections*/
+    color: #737B7D;
+}
+
+.vh-75{/*hauteur de 75% du viewport height*/
+    height: 75vh;
+}
+
+.parallax-window {/*Setup pour le parallax*/
     min-height: 400px;
     background: transparent;
+}
+
+.sec-bg {/*Bannière grise*/
+    background: #f0f0f0;
+}
+.green-bg{
+    background:#68BF3F;
+}
+.blue-bg{
+    background: #009CC2;
+}
+.bg-custom {/*Met un fond custom dans l'index*/
+    background-image: url(images/bg2.png);
 }
 
 .navbar {
@@ -37,86 +56,23 @@ body {
     box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
 }
 
-.navbar-toggler:focus {
+.navbar-toggler, .navbar-toggler:focus {/*Enlever le box shadow bleu de bootstrap sur le menu burger*/
     border: 0;
     box-shadow: 0 0 0 0;
+    outline: 0;
 }
 
-.navbar-toggler {
-    border: 0;
-    box-shadow: 0 0 0 0;
-}
-
-.spacer {
-    padding-top: 150px;
-}
-
-.banner-h1 {
-    margin-top: 220px;
-    color: #fff;
-    font-size: 130px;
-    font-weight: 700;
-    letter-spacing: 3px;
-}
-
-.banner-h2 {
-    color: #fff;
-    font-size: 50px;
-    font-weight: 100;
-    letter-spacing: 2px;
-}
-
-@media all and (max-width: 1200px) {
-    .banner-h1 {
-        font-size: 100px;
-    }
-    .banner-h2 {
-        font-size: 40px;
-    }
-}
-
-@media all and (max-width: 992px) {
-    .banner-h1 {
-        font-size: 80px;
-    }
-    .banner-h2 {
-        font-size: 35px;
-    }
-}
-
-@media all and (max-width: 768px) {
-    .banner-h1 {
-        font-size: 65px;
-    }
-    .banner-h2 {
-        font-size: 30px;
-    }
-}
-
-@media all and (max-width: 576px) {
-    .banner-h1 {
-        font-size: 47px;
-    }
-    .banner-h2 {
-        font-size: 25px;
-    }
-}
-
-i {
-    color: #fff;
-}
-
-a>.fa-angle-down {
+a > .fa-angle-down { /*Taille du chevron down de index et animation*/
     font-size: 50px;
     transition: all 0.3s ease;
 }
 
-a {
+a {/*Enlever les décorations inutiles des liens*/
     text-decoration: none;
     outline: none;
 }
 
-a:hover>.fa-angle-down {
+a:hover>.fa-angle-down {/* Animation du chevron down*/
     transform: translateY(+15px);
 }
 
@@ -143,10 +99,6 @@ div.collapse.navbar-collapse.show>.navbar-nav>li>a[class*=active] {
 
 .animated-icon span.sticky {
     background: #68BF3F;
-}
-
-.white {
-    background: #fff;
 }
 
 .navbar-nav>li>a {
@@ -202,90 +154,16 @@ div.collapse.navbar-collapse.show>.navbar-nav>li>a[class*=active] {
     color: #fff !important;
 }
 
-#section1 {
-    background: #f0f0f0;
-    /*background-image: url(images/bg2.png);*/
-    /*height: 600px;*/
-}
-
-#section1 h1 {
-    /*Bienvenue sur notre site*/
-    margin: 50px 0;
-    color: #373F41 !important;
-}
-
-#section1 p {
-    /*p en dessous*/
-    margin: 50px 0;
-    color: #373F41 !important;
-}
-
-#section2 {
-    background-image: url(images/bg2.png);
-    min-height: 600px;
-    padding-top: 100px;
-    padding-bottom: 70px;
-}
-
-#section2 h3 {
-    color: #373F41;
-}
-
-#section2 p {
-    color: #737B7D;
-}
-
-#section2 i {
-    font-size: 50px;
-    color: #fff
-}
-
-#section2 .card {
-    padding: 50px 10px;
-    border-radius: 5px;
+.card {
     transition: all 0.5s ease;
-    background: #68BF3F;
-    border: 1px solid #68BF3F;
-    color: white;
     box-shadow: 8px 4px 8px rgba(90, 90, 90, .4);
 }
 
-#section2 .card.alt {
-    background: #009CC2;
-    border-color: #009CC2;
-}
-
-#section2 .card a {
-    text-decoration: none;
-    outline: none;
-    color: white;
-}
-
-#section2 .card:hover a {
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-}
-
-#section2 .card p {
-    color: white;
-}
-
-#section2 .card:hover p {
-    color: #fff;
-}
-
-#section2 .card:hover {
+.card:hover {/*Animation des cards*/
     transform: scale(1.03);
 }
 
-#section2 h3 {
-    font-weight: normal;
-    font-size: 30px;
-    min-height: 0 !important;
-}
-
-.up-button {
+.up-button {/*CSS propre au bouton pour scroll up*/
     display: none;
     text-align: center;
     position: fixed;
@@ -310,13 +188,7 @@ div.collapse.navbar-collapse.show>.navbar-nav>li>a[class*=active] {
     transform: scale(1.1);
 }
 
-#section3 div.d-flex>div {
-    background: #fff;
-    border-radius: 5px;
-}
-
-/*Icon animation*/
-
+/*Icon animation Menu burger*/
 .animated-icon {
     width: 30px;
     height: 20px;
@@ -412,6 +284,7 @@ div.collapse.navbar-collapse.show>.navbar-nav>li>a[class*=active] {
     left: 8px;
     background: #68BF3F;
 }
+/*Fin animated Icon Menu Burger*/
 
 footer {
     background-color: #024873;
@@ -455,16 +328,4 @@ button.btn:hover{
 }
 textarea{
     resize: none;
-}
-#section3 h4 {
-    color: #373F41;
-}
-
-#section3 p {
-    color: #737B7D;
-}
-
-#team i {
-    color: #737B7D;
-    ;
 }

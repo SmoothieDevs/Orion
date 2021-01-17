@@ -1,171 +1,196 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <head>
+        <!-- Meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="icon" type="image/ico" href="images/icon.ico" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
+        <!-- Bootstrap CSS -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <!-- Bootstrap JS -->
+        <!-- Bootstrap JS -->
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
+            integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
+            integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
+            crossorigin="anonymous"></script>
 
-    <!-- Font Awesome JS -->
+        <!-- Font Awesome JS -->
 
-    <script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ca48e96271.js" crossorigin="anonymous"></script>
 
-    <!-- Scroll Parallax JS -->
+        <!-- Scroll Parallax JS -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="parallax.js-1.5.0/parallax.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="parallax.js-1.5.0/parallax.js"></script>
 
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css">
 
-    <title>Orion | Outils</title>
+        <title>Orion | Outils</title>
 
-</head>
+    </head>
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container-fluid">
-                <a class="offset-lg-1 d-inline-flex" href="#">
-                    <img id="logo" src="images/OrionLogoFA.png" title="Logo Orion" alt="LOGO" width="130px" height="35px">
-                </a>
-                <button class="navbar-toggler nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <div class="animated-icon"><span class="animated-bar"></span><span class="animated-bar"></span><span class="animated-bar"></span></div>
-                </button>
-                <div class="collapse navbar-collapse no-transition" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-lg-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="page1.html">Page 1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="page2.html">Page 2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="outils.html">Outils</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="autre.html">A propos</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-    
-    <main>
-        <section class="parallax-window banniere" data-parallax="scroll" data-speed="0.4" data-image-src="images/tools.png">
-            <div class="container ">
-                <div class="row">
-                    <div class="col-lg-10 mx-auto text-center">
-                        <h1 class="banner-h1">Les Outils</h1>
-                        <div class="spacer"></div>
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <a class="offset-lg-1 d-inline-flex" href="#">
+                        <img id="logo" src="images/OrionLogoFA.png" title="Logo Orion" alt="LOGO" width="130px"
+                            height="35px">
+                    </a>
+                    <button class="navbar-toggler nav-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <div class="animated-icon"><span class="animated-bar"></span><span
+                                class="animated-bar"></span><span class="animated-bar"></span></div>
+                    </button>
+                    <div class="collapse navbar-collapse no-transition" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-lg-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="moral.html">Le moral</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="isolement.html">L'isolement</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="outils.html">Les outils</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="autre.html">A propos</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
+            </nav>
+        </header>
 
-        <section id="section1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10 offset-lg-1 text-center">
-                        <h1 class="display-6">Les outils permettant de Garder le lien social</h1>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
-                            sapien non lectus euismod, sed interdum ligula iaculis.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="section3" style="background: linear-gradient(0.25turn, #68BF3F, #009cc2);">
-            <div class="container">
-                <div class="row">
-                    <div class="container">
-                        <div class="row d-flex justify-content-between align-content-between flex-wrap mb-3">
-                            <div class="col-lg-12 my-5 p-5">
-                                <h4 class="heading-6 mb-4">Outils 1</h4>
-                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                    laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.
-                                </p>
-                                <p class="mt-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                    laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.
-                                </p>
-                                <a class="mt-4 py-3 px-5 btn btn-primary" href="#" role="button">En savoir plus</a>
-
-                            </div>
-                            <div class="col-lg-12 my-5 p-5">
-                                <h4 class="heading-6 mb-4">Outils 2</h4>
-                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                    laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.
-                                </p>
-                                <p class="mt-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                    laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.
-                                </p>
-                                <a class="mt-4 py-3 px-5 btn btn-primary" href="#" role="button">En savoir plus</a>
-                            </div>
-                            <div class="col-lg-12 my-5 p-5">
-                                <h4 class="heading-6 mb-4">Outils 3</h4>
-                                <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                    laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.
-                                </p>
-                                <p class="mt-3 m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                                    laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit. Integer laoreet
-                                    sapien non lectus euismod, sed interdum ligula iaculis.
-                                </p>
-                                <a class="mt-4 py-3 px-5 btn btn-primary" href="#" role="button">En savoir plus</a>
-                            </div>
-
+        <main>
+            <section class="parallax-window" data-parallax="scroll" data-speed="0.4" data-image-src="images/tools.png">
+                <div class="container justify-content-center align-items-center d-flex vh-75">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-lg-12">
+                            <h1 class="display-1 fw-bold text-white" style="font-size: 8vw;">Les Outils</h1>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
-    <!-- Footer -->
+            </section>
+
+            <section class="sec-bg py-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 offset-lg-1 text-center">
+                            <h1 class="display-6">Les outils permettant de garder le lien social</h1>
+                            <p class="lead ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer laoreet
+                                sapien non lectus euismod, sed interdum ligula iaculis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="section3" class="parallax-window" data-parallax="scroll" data-speed="0.4" data-image-src="images/page2.png">
+                <div class="container">
+                    <div class="row">
+                        <div class="container">
+                            <div class="row px-3 d-flex justify-content-between align-content-between flex-wrap mb-3">
+                                <div class="col-lg-12 my-5 p-5 bg-white rounded">
+                                    <h4 class="heading-6 mb-4">Outils 1</h4>
+                                    <p class="m-0 sec-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.
+                                    </p>
+                                    <p class="mt-3 m-0 sec-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.
+                                    </p>
+                                    <a class="mt-4 py-3 px-5 btn btn-primary" href="#" role="button">En savoir plus</a>
+
+                                </div>
+                                <div class="col-lg-12 my-5 p-5 bg-white rounded">
+                                    <h4 class="heading-6 mb-4">Outils 2</h4>
+                                    <p class="m-0 sec-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.
+                                    </p>
+                                    <p class="mt-3 m-0 sec-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.
+                                    </p>
+                                    <a class="mt-4 py-3 px-5 btn btn-primary" href="#" role="button">En savoir plus</a>
+                                </div>
+                                <div class="col-lg-12 my-5 p-5 bg-white rounded">
+                                    <h4 class="heading-6 mb-4">Outils 3</h4>
+                                    <p class="m-0 sec-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.
+                                    </p>
+                                    <p class="mt-3 m-0 sec-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                                        laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.Lorem ipsum dolor sit
+                                        amet,
+                                        consectetur adipiscing elit. Integer laoreet
+                                        sapien non lectus euismod, sed interdum ligula iaculis.
+                                    </p>
+                                    <a class="mt-4 py-3 px-5 btn btn-primary" href="#" role="button">En savoir plus</a>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
     <footer class="text-white">
         <div class="container-fluid text-center text-md-left">
             <div class="row">
@@ -191,13 +216,13 @@
                     <h6 class="text-uppercase">Liens utiles</h6>
                     <ul class="list-unstyled">
                         <li class="m-3">
-                            <a href="#!">Facebook</a>
+                            <a href="https://fr-fr.facebook.com/">Facebook</a>
                         </li>
                         <li class="m-3">
-                            <a href="#!">Twitter</a>
+                            <a href="https://twitter.com/?lang=fr">Twitter</a>
                         </li>
                         <li class="m-3">
-                            <a href="#!">Instagram</a>
+                            <a href="https://www.instagram.com/?hl=fr">Instagram</a>
                         </li>
                     </ul>
                 </div>
@@ -210,33 +235,36 @@
         </div>
     </footer>
     <!-- Footer -->
-    <aside><a href="#" class="up-button"><i class="fas fa-chevron-up"></i></a></aside>
+    <aside><a href="#" class="up-button"><i class="fas text-white fa-chevron-up"></i></a></aside>
 </body>
-<script>
-    var navbutton = document.querySelector(".nav-button");
-    var mybutton = document.querySelector(".up-button");
-    const navbar = document.querySelector(".navbar");
-    const navlink = document.querySelector(".nav-link");
-    const logo = document.getElementById("logo");
-    var bars = document.querySelectorAll(".animated-bar");
-    window.onscroll = () => {
-        this.scrollY > 10 ? mybutton.style.display = "block" : mybutton.style.display = "none";
-        this.scrollY > 10 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
-        this.scrollY > 10 ? logo.src = 'images/OrionLogoF.png' : logo.src = 'images/OrionLogoFA.png';
-        this.scrollY > 10 ? navlink.classList.add("sticky") : navlink.classList.remove("sticky");
-        bars.forEach((bars) => {
-            this.scrollY > 10 ? bars.classList.add("sticky") : bars.classList.remove("sticky");
+    <script>
+        //Def variables
+        var navbutton = document.querySelector(".nav-button");
+        var mybutton = document.querySelector(".up-button");
+        const navbar = document.querySelector(".navbar");
+        const navlink = document.querySelector(".nav-link");
+        const logo = document.getElementById("logo");
+        var bars = document.querySelectorAll(".animated-bar");//Selection des 3 bars ( <span> ) du menu burgers sous forme de NodeList
+        //Quand on scroll de 10px
+        window.onscroll = () => {
+            this.scrollY > 10 ? mybutton.style.display = "block" : mybutton.style.display = "none";//faire apparaitre le button pour revenir en haut de page
+            this.scrollY > 10 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+            this.scrollY > 10 ? logo.src = 'images/OrionLogoF.png' : logo.src = 'images/OrionLogoFA.png';
+            this.scrollY > 10 ? navlink.classList.add("sticky") : navlink.classList.remove("sticky");
+            bars.forEach((bars) => {//ajouter la class sticky pour mettre les bars du menu burgers vertes quand le nav est en sticky
+                this.scrollY > 10 ? bars.classList.add("sticky") : bars.classList.remove("sticky");
+            });
+        }
+        //jquery / toggle des class pour configurer le menu burger
+        $(document).ready(function () {
+
+            $('.nav-button').on('click', function () {
+
+                $('.animated-icon').toggleClass('open');//transformer les 3 bars en croix
+                $('.navbar').toggleClass('bg-white');// Mettre un fond blanc même quand on a pas scroll de 10px
+            });
         });
-    }
-    $(document).ready(function() {
 
-        $('.nav-button').on('click', function() {
-
-            $('.animated-icon').toggleClass('open');
-            $('.navbar').toggleClass('white');
-        });
-    });
-
-</script>
+    </script>
 
 </html>
